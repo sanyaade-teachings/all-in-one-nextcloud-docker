@@ -59,14 +59,14 @@ services:
       - local-code
 
   desec-mock:
-    image: docker.io/library/node:26@sha256:f5d1cc40abc10c2843339a2134d07817cf33c405cb16bfd052b0ed790254c3a3
+    image: docker.io/library/node:26@sha256:a98e6fda54fdbb22d4238054cca9a2a113bcd1191c09193a535aae22f400aa8e
     volumes:
       - ..:/app/php
     working_dir: /app
     command: node php/tests/desec-mock.mjs 8090 2>&1
           
   npm-installer:
-    image: docker.io/library/node:26@sha256:f5d1cc40abc10c2843339a2134d07817cf33c405cb16bfd052b0ed790254c3a3
+    image: docker.io/library/node:26@sha256:a98e6fda54fdbb22d4238054cca9a2a113bcd1191c09193a535aae22f400aa8e
     volumes:
       - ..:/app
     working_dir: /app/tests
