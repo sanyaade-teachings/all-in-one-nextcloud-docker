@@ -1,4 +1,4 @@
-FROM docker.io/library/composer:2@sha256:8de2184c6de224f4689e8f80ed5f5edaf0030b6b8b7839a22a2bcb6722ac87d0
+FROM docker.io/library/composer:2@sha256:5b2137f112f939a92788ceb5e55f54859d9dbf467a44037cf7760bdda949f365
 
 ARG APCU_VERSION=5.1.28
 
